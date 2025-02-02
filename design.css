@@ -1,0 +1,9 @@
+.photo-bg {
+    background-image: url("https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.nyfa.edu%2Fstudent-resources%2Fhow-to-get-photography-work-with-professional-website%2F&psig=AOvVaw2bYxC6qB2khP8Vs1AfTCE4&ust=1722942469578000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCkiYPb3YcDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    height: 100px;
+}
+.text-bg {
+    color: white;
+    font-size: 60px;
+}

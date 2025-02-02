@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video & Editing - GKB Productions</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3e63d2a27b.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: background-color 0.5s ease;
+        }
+
+        .navbar-custom.scrolled {
+            background-color: black;
+        }
+
+        .logo {
+            width: 180px;
+            height: 60px;
+        }
+
+        .video-section {
+            padding: 100px 0;
+        }
+
+        .video-section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #ff6f61;
+        }
+
+        .video-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .video-item {
+            background: #1e1e1e;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .video-item iframe,
+        .video-item video {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .video-item h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #ff6f61;
+            text-align: center;
+        }
+
+        .video-item p {
+            font-size: 1rem;
+            color: #ccc;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff6f61;
+        }
+
+        .video-thumbnail {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .play-icon:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="photo1.html"><img src="bg-removebg-preview.png" class="logo" alt="GKB Productions"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="photo1.html#services" style="color: white;">Our Services</a>
+                    <a class="nav-link" href="contact.html" style="color: white;">Contact Us</a>
+                    <a class="nav-link" href="photography.html" style="color: white;">Photography</a>
+                    <a class="nav-link" href="albums.html" style="color: white;">Albums</a>
+                    <a class="nav-link active" href="video-editing.html" style="color: white;">Video & Editing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Video & Editing</h2>
+            <p class="video-description">
+                We specialize in creating high-quality videos for various occasions. From <strong>Teasers</strong> to <strong>WhatsApp Invitations</strong>, we bring your ideas to life with stunning visuals and professional editing.
+            </p>
+            <div class="video-grid">
+                <!-- Teasers -->
+                <div class="video-item">
+                    <div class="video-thumbnail" onclick="playVideo(this)">
+                        <img src="Video/Screenshot 2025-02-02 180342.png" alt="Teaser Thumbnail" class="img-fluid">
+                        <div class="play-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <video class="video-player" style="display: none;" controls>
+                        <source src="Video/Intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Teasers</h3>
+                    <p>Short and captivating videos to build excitement for your event.</p>
+                </div>
+
+                <!-- WhatsApp Invitations -->
+                <div class="video-item">
+                    <div class="video-thumbnail" onclick="playVideo(this)">
+                        <img src="https://img.youtube.com/vi/VIDEO_ID_2/0.jpg" alt="WhatsApp Invitations Thumbnail" class="img-fluid">
+                        <div class="play-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <iframe class="video-player" src="https://www.youtube.com/embed/VIDEO_ID_2" style="display: none;" allowfullscreen></iframe>
+                    <h3>WhatsApp Invitations</h3>
+                    <p>Creative and personalized invitations for your special occasions.</p>
+                </div>
+
+                <!-- Event Highlights -->
+                <div class="video-item">
+                    <div class="video-thumbnail" onclick="playVideo(this)">
+                        <img src="Video\haldi.png" alt="Event Highlights Thumbnail" class="img-fluid">
+                        <div class="play-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <iframe class="video-player" src="Video\Haldi Teaser.mp4" style="display: none;" allowfullscreen></iframe>
+                    <h3>Event Highlights</h3>
+                    <p>Relive the best moments of your event with our highlight reels.</p>
+                </div>
+
+                <!-- Corporate Videos -->
+                <div class="video-item">
+                    <div class="video-thumbnail" onclick="playVideo(this)">
+                        <img src="https://img.youtube.com/vi/VIDEO_ID_4/0.jpg" alt="Corporate Video Thumbnail" class="img-fluid">
+                        <div class="play-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <iframe class="video-player" src="https://www.youtube.com/embed/VIDEO_ID_4" style="display: none;" allowfullscreen></iframe>
+                    <h3>Corporate Videos</h3>
+                    <p>Professional videos for corporate events, presentations, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;GKB Productions</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Follow us on <a href="https://www.instagram.com/balu_1043?igsh=MXdtZ2MwbGRxd2EwMw%3D%3D&utm_source=qr">Instagram</a></p>
+            <p>Contact:9440385285</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Smooth Scroll and Navbar Scroll Effect -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar-custom').addClass('scrolled');
+                } else {
+                    $('.navbar-custom').removeClass('scrolled');
+                }
+            });
+        });
+
+        // Play video on thumbnail click
+        function playVideo(element) {
+            var videoElement = element.nextElementSibling;  // Get the video or iframe element
+            var thumbnail = element;  // Get the thumbnail (img)
+            
+            // Hide the thumbnail
+            thumbnail.style.display = 'none';
+
+            // Show the video/iframe
+            videoElement.style.display = 'block';
+            if (videoElement.tagName.toLowerCase() === 'video') {
+                videoElement.play();
+            }
+        }
+    </script>
+</body>
+
+</html>

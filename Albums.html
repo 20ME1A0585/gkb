@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums - GKB Productions</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3e63d2a27b.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: background-color 0.5s ease;
+        }
+
+        .navbar-custom.scrolled {
+            background-color: black;
+        }
+
+        .logo {
+            width: 180px;
+            height: 60px;
+        }
+
+        .albums-section {
+            padding: 100px 0;
+        }
+
+        .albums-section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #ff6f61; /* Accent color */
+        }
+
+        .albums-description {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #b18787;
+            margin-bottom: 60px;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .album-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .album-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .album-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .album-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .album-item:hover::after {
+            opacity: 1;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="photo1.html"><img src="bg-removebg-preview.png" class="logo" alt="GKB Productions"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="photo1.html#services" style="color: white;">Our Services</a>
+                    <a class="nav-link" href="contact.html" style="color: white;">Contact Us</a>
+                    <a class="nav-link active" href="albums.html" style="color: white;">Albums</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Albums Section -->
+    <section class="albums-section">
+        <div class="container">
+            <h2 style="color: #b18787;">Our Custom Albums</h2>
+            <p class="albums-description">We offer a wide variety of personalized albums to capture your precious memories. Choose from options like <br>Glossy, Matte, Embossed and more, to create the perfect based on your needs. Our albums are designed with premium quality and attention to detail, ensuring that your memories are preserved in the best possible way.</p>
+
+            <div class="album-grid">
+                <!-- Album Samples -->
+                <div class="album-item">
+                    <img src="Album\WhatsApp Image 2025-02-02 at 5.15.26 PM.jpeg" alt="Sample Album 1">
+                </div>
+                <div class="album-item">
+                    <img src="Album\al 3.jpg" alt="Sample Album 1">
+                </div>
+                <div class="album-item">
+                    <img src="Album\alb 3.JPG" alt="Sample Album 1">
+                </div>
+                <div class="album-item">
+                    <img src="Album\WhatsApp Image 2025-02-02 at 5.15.48 PM.jpeg" alt="Sample Album 1">
+                </div>
+
+                <div class="album-item">
+                    <img src="Album\WhatsApp Image 2025-02-02 at 5.16.16 PM (1).jpeg" alt="Sample Album 1">
+                </div>
+                <div class="album-item">
+                    <img src="Album\WhatsApp Image 2025-02-02 at 5.16.16 PM.jpeg" alt="Sample Album 2">
+                </div>
+                <div class="album-item">
+                    <img src="Album\alb 4.JPG" alt="Sample Album 3">
+                </div>
+                <div class="album-item">
+                    <img src="Album\Albums 2.jpg" alt="Sample Album 4">
+                </div>
+                <div class="album-item">
+                    <img src="Album\Albums.jpg" alt="Sample Album 5">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;GKB Productions</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/balu_1043?igsh=MXdtZ2MwbGRxd2EwMw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Follow us on <a href="https://www.instagram.com/balu_1043?igsh=MXdtZ2MwbGRxd2EwMw%3D%3D&utm_source=qr">Instagram</a></p>
+            <p>Contact:9440385285</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Smooth Scroll and Navbar Scroll Effect -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar-custom').addClass('scrolled');
+                } else {
+                    $('.navbar-custom').removeClass('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
